@@ -17,18 +17,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val etNome: EditText = findViewById(R.id.et_dado1)
-        val etPhone: EditText = findViewById(R.id.et_dado2)
-        val btAdd: Button = findViewById(R.id.btAdd)
 
         bindView()
         updateList()
-
-        // Adiciona os elementos do campo à lista
-        btAdd.setOnClickListener {
-            if(etNome != null && etPhone != null)
-                adapter.addItem(Default(etNome.text.toString(), etPhone.text.toString(), "img.png"))
-        }
     }
 
     //Vincula o adapter do recycler view ao nosso adapter criado e escolhe o layout do RV

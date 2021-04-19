@@ -30,11 +30,6 @@ class DefaultAdapter : RecyclerView.Adapter<DefaultAdapterViewHolder>() {
         this.list.addAll(list)
         notifyDataSetChanged()
     }
-
-    fun addItem(default: Default){
-        this.list.add(default)
-        notifyDataSetChanged()
-    }
 }
 
 // É responsavel pelo gerenciamento de cada item.
