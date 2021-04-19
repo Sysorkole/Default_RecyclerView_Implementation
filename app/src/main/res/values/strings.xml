@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Default_RecyclerView</string>
+    <string name="default_photo">Default Photo</string>
+    <string name="add_info1">Add info one</string>
+    <string name="add_info2">Add dado 2</string>
+    <string name="add_button">Add</string>
+</resources>
